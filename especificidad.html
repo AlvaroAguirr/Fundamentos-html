@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad y cascada</title>
+ <style>
+
+    /*
+        div{
+    background-color: orange;      
+        }
+        div{
+    background-color: purple;      
+        }
+*/
+        
+*{
+    color: red;
+}
+
+    div{
+color:  green;
+
+    }
+
+.clase {
+    background-color: lawngreen;
+}
+
+#ide{
+
+    background-color: peru;
+    color: mediumvioletred;
+}
+    </style>
+    
+
+</head>
+<body>
+
+  <div>cascada</div>
+  <div clase="clase">cascada</div>
+  <div clase="clase">cascada</div>
+  <div clase="clase">cascada</div>
+  <div clase="clase" id="ide">cascada</div>
+  
+  <p class="clase">es una pe</p>
+  <p>es una pe</p>
+
+  
+
+</body>
+</html>
